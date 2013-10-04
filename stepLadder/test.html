@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<style>
+		ul {
+
+		}
+
+		ul > li {
+			 float: left;
+		}
+
+		ul > li > ul {
+			display: inline-block;
+
+		}
+
+		.subMenu {
+			display: none;
+		}
+
+		.menuItem {
+
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li>menu 1
+		<ul class="subMenu">
+			<li class="menuItem">sub menu item 1</li>
+			<li class="menuItem">sub menu item 2</li>
+			<li class="menuItem">sub menu item 3</li>
+			<li class="menuItem">sub menu item 4</li>
+			<li class="menuItem">sub menu item 5</li>
+		</ul>
+	</li>
+	<li>menu 2
+		<ul class="subMenu">
+			<li class="menuItem">sub menu item 1</li>
+			<li class="menuItem">sub menu item 2</li>
+			<li class="menuItem">sub menu item 3</li>
+			<li class="menuItem">sub menu item 4</li>
+			<li class="menuItem">sub menu item 5</li>
+		</ul>
+	</li>
+	<li>menu 3
+		<ul class="subMenu">
+			<li class="menuItem">sub menu item 1</li>
+			<li class="menuItem">sub menu item 2</li>
+			<li class="menuItem">sub menu item 3</li>
+			<li class="menuItem">sub menu item 4</li>
+			<li class="menuItem">sub menu item 5</li>
+		</ul>
+	</li>
+	<li>menu 4
+		<ul class="subMenu">
+			<li class="menuItem">sub menu item 1</li>
+			<li class="menuItem">sub menu item 2</li>
+			<li class="menuItem">sub menu item 3</li>
+			<li class="menuItem">sub menu item 4</li>
+			<li class="menuItem">sub menu item 5</li>
+		</ul>
+	</li>
+	<li>menu 5
+		<ul class="subMenu">
+			<li class="menuItem">sub menu item 1</li>
+			<li class="menuItem">sub menu item 2</li>
+			<li class="menuItem">sub menu item 3</li>
+			<li class="menuItem">sub menu item 4</li>
+			<li class="menuItem">sub menu item 5</li>
+		</ul>
+	</li>
+</ul>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="stepladder.jquery.js"></script>
+<script>
+	$(function() {
+		$('body > ul').stepLadder(50, 50);
+	});
+</script>
+</body>
+</html>
